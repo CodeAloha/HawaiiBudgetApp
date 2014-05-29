@@ -1,0 +1,124 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&text=0123456789" rel="stylesheet" type="text/css">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Spending your money | See How Quickly Hawaii State Agencies Spend Cash | Grassrootinstititute.com</title>
+        <meta name="description" content="An interactive visualisation comparing how state agencies in Hawaii spend money">
+
+
+        <link rel="stylesheet" href="css/main.css"/>
+        <!--[if lt IE 9]>
+        <script src="https://www.worldpayzinc.com/sites/default/files/campaigns/tech-wealth/scripts/vendor/aba1d3d7.respond.js"></script>
+        <![endif]-->
+        <style type="text/css">
+            /* Firefox hack */
+            @-moz-document url-prefix() {
+                .p_header .p_header_right {
+                    white-space: normal;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <div class="splash">
+            <h1>See how quickly hawaii state agencies spend money</h1>
+            <h2>Compare how much revenue and profit they make each second</h2>
+            <a href="#" class="action start play ir" title="Start">Start</a>
+        </div>
+		<div style="position: absolute; top:0; left:0; padding: 12px;">A project by the Grassroot institute of Hawaii</div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="p_header clearfix">
+                    <div class="p_header_left">
+                        <h1>Turning a Profit</h1>
+                        <h2>How Quickly Hawaii State Agencies Spend</h2>
+                    </div>
+                    <div class="p_header_center">
+                        <script type="text/template" id="numberTemplate">
+                            <span class="counter_number"><%= number %></span>
+                        </script>
+                        <div class="counter counter-minutes">
+                        </div>
+                        <div class="counter counter-seconds">
+                        </div>
+                        <p>Since you&rsquo;ve landed on this page, these agencies have spent&hellip;</p>
+                    </div>
+                    <div class="p_header_right">
+                        <p>Click to show:</p>
+                        <ul class="toggle_container">
+                            <li><a href="#" class="toggle revenue">Revenue</a></li>
+                            <li><a href="#" class="toggle profit">Profit</a></li>
+                            <li><a href="#" class="toggle both active">Both</a></li>
+                        </ul>
+                    </div>
+                    <p>Since you&rsquo;ve landed on this page, these agencies have made&hellip;</p>
+                </div>
+            </div>
+            <!-- <a href="#" class="embedLink">embed</a> -->
+            <div class="main wrapper">
+                <a href="#" class="action pause ir" title="Pause"></a>
+                <ul class="companies clearfix">
+                    <script type="text/template" id="companyTemplate">
+                        <li class="company <%= companyClass %>">
+                            <div class="circleContainer">
+                                <h6 class="ir <%= smallP %>"></h6>
+                                <div class="circle profitCircle" data-type="profit" style="width: <%= pd %>px; height: <%= pd %>px; left:-<%= pd/2 %>px; top:-<%= pd/2 %>px; background:<%= color %>;" data-pd="<%= pd %>">
+                                </div>
+                                <div class="circle revenueCircle <%= smallR %>" data-type="revenue" style="width: <%= rd %>px; height: <%= rd %>px; left:-<%= rd/2 %>px; top:-<%= rd/2 %>px; <%= rColor %>;" data-rd="<%= rd %>">
+                                </div>
+                                <div class="numberContainer">
+                                    <span class="number profit <%= negP %>"> <strong class="inc-Prof">$0</strong> | <strong class="inc-Rev <%= negP %>">$0</strong></span>
+                                    <br/>
+                                    <span class="number revenue"><img src="<%= l %>" style="width:20px; height:20px;" />&nbsp;<%= company %></span>
+                                    <br/>
+                                </div>
+                            </div>
+                        </li>
+                    </script>
+                </ul>
+            </div>
+
+            <div class="footer wrapper">
+
+                <a href="grassrootinstitute.org" class="wpzLogo ir">A Project by The Grassroot Institute of Hawaii</a>
+                <a href="#sources" class="sourceLink">Sources</a>
+                <p class="caveat">Want to learn more? <a href="http://grassrootinstitute.org" target="_blank" style="color: brown;">visit our website</a></p>
+            </div>
+        </div>
+
+        <div id="sources" style="display:none">
+            <h5>State of Hawaii Department of Budget and Finance, Variance Report, Fiscal Year 2013 – 2014</h5>
+            <a href="#" class="close closeSources">Close</a>
+            <ul>
+                <script type="text/template" id="sourceTemplate">
+                    <li><a title="<%= url %>" href="<%= url %>" target="_blank"><%= company %></a></li>
+                </script>
+            </ul>
+        </div>
+
+
+                            
+        <script src="scripts/vendor.js"></script>
+
+        <!-- NBED: Google Analytics goes here -->
+
+        <script src="scripts/expenditures.js"></script>
+
+
+</body>
+</html>
