@@ -34,7 +34,7 @@ var p_data = [{
     Source: "http://ag.hawaii.gov",
     Color: "#12678c"
 }, {
-    Company: "Apple",
+    Company: "DBEDT",
     TotalRevenue: 176219000,
     TotalProfit: 37037,
     RevPerSecond: 0.91993277524,
@@ -45,7 +45,7 @@ var p_data = [{
     Source: "http://dbedt.hawaii.gov",
     Color: "#dbdbdb"
 }, {
-    Company: "Microsoft",
+    Company: "Budget & Finance",
     TotalRevenue: 77849,
     TotalProfit: 21863,
     RevPerSecond: 2468.57559614409,
@@ -56,7 +56,7 @@ var p_data = [{
     Source: "https://www.google.co.uk/finance?q=NASDAQ%3AMSFT&fstype=ii&ei=g3YEU6jjIOrEwAOtBA",
     Color: "#3c5597"
 }, {
-    Company: "LinkedIn",
+    Company: "Commerce & Consumer Affairs",
     TotalRevenue: 1528.55,
     TotalProfit: 26.77,
     RevPerSecond: 48.4700025367834,
@@ -67,7 +67,7 @@ var p_data = [{
     Source: "https://www.google.co.uk/finance?q=NYSE%3ALNKD&fstype=ii&ei=QHcEU5juLIaFwAPi-QE",
     Color: "#007bbd"
 }, {
-    Company: "Amazon",
+    Company: "Defense",
     TotalRevenue: 74452,
     TotalProfit: 745,
     RevPerSecond: 2360.85743277524,
@@ -78,7 +78,7 @@ var p_data = [{
     Source: "https://www.google.co.uk/finance?q=NASDAQ%3AAMZN&fstype=ii&ei=oHYEU_iNGOrEwAOtBA",
     Color: "#ff9902"
 }, {
-    Company: "Ebay",
+    Company: "Education",
     TotalRevenue: 16047,
     TotalProfit: 2856,
     RevPerSecond: 508.84703196347,
